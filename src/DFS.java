@@ -89,7 +89,7 @@ public class DFS {
 				if((gridWorld.getCurrentCell().row == targetRow) && (gridWorld.getCurrentCell().col == targetCol)) {
 					return true;
 				} else {
-					
+
 					// If the adjacent cell has already been visited then come back
 					moveTo(lastCell);
 				}

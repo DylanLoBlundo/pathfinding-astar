@@ -158,9 +158,12 @@ public class AStar {
 			}
 		}
 		
+		// Initializes the starting cell to true 
+		visited[startRow][startCol] = true;
+		
 		// Start A* algorithm
 		while(!pqueue.isEmpty()) {
-
+			
 			/*
 			 *  Until I have reached the cell in the first position of the priority queue,
 			 *  I call DFS for to go back 
